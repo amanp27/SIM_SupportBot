@@ -15,7 +15,7 @@
 7. [Purchase Orders](#7-purchase-orders)
 8. [Purchase Records](#8-purchase-records)
 9. [Inventory Management](#9-inventory-management)
-10. [Sale Returns, Refunds & Credit Notes](#10-sale-returns-refunds--credit-notes)
+10. [Sale Returns, Refunds & Credit Notes](#10-sales-return-refunds--credit-notes)
 11. [Sub Users & Approvals](#11-sub-users--approvals)
 12. [GST Compliance — India](#12-gst-compliance--india)
 
@@ -130,6 +130,13 @@ This feature is useful for businesses that regularly deal with the same clients 
 
 **Credit limit**: Up to what limit would you allow the client to obtain credit from you against invoices. The customer insight records and shows for each client to remind you if the client has crossed the threshold limit that you have set for the client 
 
+### Export Client/Supplier List to Excel: - 
+You can easily download your Client/Supplier list using the Export Excel option. 
+
+---
+
+### Interaction with other features - dependency , side effects 
+
 #### Customer/Supplier Insight: -  
 Gives a complete summary of transactions, including credit limits, upcoming dues, overdue/long overdue amounts, pending items, payment behavior, and activity—all in one place. 
 
@@ -141,19 +148,6 @@ Gives a complete summary of transactions, including credit limits, upcoming dues
 | Customer Activity | Graph of monthly or periodic transactions | Helps track customer engagement and business trends |
 | Top Selling Products  | Most frequently purchased products by the customer  | Helps identify customer preferences and popular items |
 
-### Export Client/Supplier List to Excel: - 
-You can easily download your Client/Supplier list using the Export Excel option. 
-
-### Batch Upload: 
-Easily upload multiple clients at once using the Batch Upload feature—simply select the Client option, download the template, fill in client details, and upload the file to add them in bulk. 
-
----
-
-### Interaction with other features - dependency , side effects 
-
-
-Customer insights – It shows the entire information of the client/customer to give you a bird’s eye view of the data collected till date: it’s credit limit, the due date, the invoices/estimates that are pending, the graphical trend of the sales, top-5 products that are frequently order by them 
-
 Report – Top 5 customers on the basis 
 
 - **Customer Category-** If there are existing client, you can create categories to sort the client list to prioritize at different levels 
@@ -162,7 +156,9 @@ Report – Top 5 customers on the basis
 
 - **Receivables / Payables–** That shown a list of clients that owes you and a total receivable about 
 
-- **Batch Upload–** Easily upload multiple clients at once using the Batch Upload feature—simply select the Client option, download the template, fill in client details, and upload the file to add them in bulk.
+### Batch Upload: 
+Easily upload multiple clients at once using the Batch Upload feature—simply select the Client option, download the template, fill in client details, and upload the file to add them in bulk. 
+
 --- 
 
 ### 🎥 Video Tutorial
@@ -185,23 +181,12 @@ Set up before creating your first invoice or add products directly while creatin
 
 ### 🔁 Flow — Adding a Single Product or Service
 
-1. Access Product Management  
-  a. From the dashboard, tap the hamburger menu (☰).  
-  b. Navigate to Products → Show Product List.  
-
-2. Start Creating a Product  
-  a. Tap Create New Product.   
-
-3. Fill in Details  
-  a. Complete all required fields  (This typically includes name, description, price, category, etc.)  
-
-4. Configure Inventory  
-  a. Enable Product Inventory if you want to track stock levels.  
-  b. Disable if inventory tracking is not needed.  
-
-5. Save  
-
-  a. Tap Save to add the product/service to your list. 
+1. Go to Dashboard >> Menu (☰) >> Product >> Product List
+2. Go to Product List >> Add New Product
+3. Tap Add New Product
+4. Fill required fields (Name, Price, Category, etc.)
+5. Enable or disable inventory tracking as needed
+6. Tap Save
 
 ---
 
@@ -316,7 +301,7 @@ Used by any business that sells goods or services — freelancers, retailers, wh
 - **B2B Invoice-** An e-invoice (electronic invoice) is a digitally created and government-validated invoice used mainly for GST reporting.
 
 - **e-way Bills-** An e-way bill is a digital document required for transporting goods
-Commission  Commission is an amount of money paid to someone for making a sale or helping complete a deal.
+  Commission is an amount of money paid to someone for making a sale or helping complete a deal.
 
 - **Delivery Note-** A delivery note is a document sent along with goods when they are delivered to a customer.
 
@@ -720,125 +705,179 @@ Also add Reconciliation Edit in the Field References section of Inventory Manage
 
 ---
 
-## 10. Sale Returns, Refunds & Credit Notes
+## 10. Sales Return, Refunds & Credit Notes 
+ 
 
-### What It Is
-When a client returns goods, the transaction must be recorded formally — not by deleting the original invoice, which would break the accounting record. A **sale return** is a document linked to the original invoice that records the goods coming back. It keeps the original sale intact while accounting for the reversal.
+### What It Is 
 
-A **credit note** is the monetary counterpart to a sale return — it formally records the value owed back to the client. That credit can be returned as cash (refund) or held as a balance to reduce a future invoice.
+Sales Return 
 
-### When & Who
-Used by any business that accepts returns — retailers, wholesalers, e-commerce sellers. Also used to issue goodwill credits, discount coupons, or adjustments for quality complaints, without any physical return of goods.
+When a customer returns goods, you should not delete the original invoice, as it is part of your accounting records. 
 
----
+Instead, you need to create a Sales Return. 
+- A Sales Return is a document linked to the original invoice 
+- It records the goods that have been returned 
+- It keeps your original sale intact 
+- It automatically updates your stock (inventory increases) 
 
-### 🔁 Flow — Recording a Sale Return
+In simple terms: 
 
-1. Tap on the original invoice → select **Make Sale Return**.
-2. Enter return quantities → tap **Next** → review preview → tap **Save**.
-3. A separate sale return entry is created. The original invoice remains unchanged.
-4. Status of sale return: **Not Refunded**.
+Goods come back → create a Sales Return → stock is updated 
 
----
+ 
+### Credit Note 
+A Credit Note is used to handle the money value of the returned goods. 
+- It records how much amount is owed back to the customer 
+- You can: 
+    - Refund the amount (cash/bank), or 
+    - Adjust it in the next invoice 
 
-### 🔁 Flow — Issuing a Refund
+Please Note: To use this feature, make sure Credit Note is enabled in your settings. 
 
-1. Tap on the sale return entry → tap **Mark as Refund** → enter amount → save.
-2. Status updates to **Refunded**.
+### When & Who 
 
----
+Used by any business that accepts returns — retailers, wholesalers, e-commerce sellers. Also used to issue goodwill credits, discount coupons, or adjustments for quality complaints, without any physical return of goods. 
 
-### 🔁 Flow — Adjusting a Credit Note Against a Future Invoice
+--- 
 
-1. Enable **Credit Note** feature in settings.
-2. Create a new invoice for the same client — a **Credit Note section** appears below the total.
-3. Check the option to adjust or carry forward the credit.
-4. Invoice shows **Partially Received** if only part was covered by credit. Collect the remaining balance and mark as paid.
+### 🔁 Flow — Recording a Sale Return 
 
----
+1. Tap on the original invoice → select **Make Sale Return**. 
+2. Enter return quantities → tap **Next** → review preview → tap **Save**. 
+3. A separate sale return entry is created. The original invoice remains unchanged. 
+4. Status of sale return: **Not Refunded**. 
 
-### 🔁 Flow — Issuing a Credit Note Directly to a Client
+--- 
 
-1. Go to **Credit Note List** → tap **Create**.
-2. Select client → enter amount → save. Status: **Not Adjusted**.
-3. When the client makes a future purchase, create an invoice — available credit appears.
-4. Apply the credit → save. Status updates to **Adjusted**.
+### 🔁 Flow — Issuing a Refund 
 
----
+1. Tap on the sale return entry → tap **Mark as Refund** → enter amount → save. 
+2. Status updates to **Refunded**. 
 
-### 🔁 Flow — Adjusting One Credit Note Against Multiple Invoices
+--- 
 
-1. Create or open a credit note → tap **Adjust Credit Note Against Invoice**.
-2. Only invoices with unpaid or partially paid status will appear.
-3. For each invoice: enter the adjustment amount.
-4. Review the summary (total credit, amount adjusting, remaining balance).
-5. Tap **Next** to confirm. Once fully applied, the credit note balance becomes zero.
+### 🔁 Flow — Adjust Refund During Payment 
 
----
+When recording a payment from a client, you can adjust the refund amount from a Sales Return. 
+- Go to Payment Received 
+- Select the client 
+- Choose the Sales Return (Credit Note) 
+- Adjust the refund amount to update the receivable for that invoice  
 
-### Key Fields
+### 🔁 Flow — Adjusting a Credit Note Against a Future Invoice  
 
-| Field | What It Means |
-|---|---|
-| **Return Quantity** | Number of units being returned. Cannot exceed the quantity in the original invoice. |
-| **Refund Amount** | The monetary value returned to the client in cash or via bank transfer. |
-| **Credit Note Amount** | The value of credit issued to the client for future use. |
-| **Credit Note Status** | Whether the credit has been used against an invoice yet. |
-| **Sale Return Status** | Whether the monetary value of returned goods has been refunded or not. |
-| **Adjustment Amount** | The portion of a credit note being applied to a specific invoice. |
-| **Remaining Credit Balance** | The unused portion of a credit note still available for future transactions. |
+1. Enable **Credit Note** feature in settings. 
+2. Create a new invoice for the same client — a **Credit Note section** appears below the total. 
+3. Check the option to adjust or carry forward the credit. 
+4. Invoice shows **Partially Received** if only part was covered by credit. Collect the remaining balance and mark as paid. 
 
-### Statuses
+--- 
 
-| Document | Status | Meaning |
-|---|---|---|
-| Sale Return | Not Refunded | Return recorded; money not yet returned to client. |
-| Sale Return | Refunded | Money has been returned to client. |
-| Credit Note | Not Adjusted | Credit exists but has not yet been applied to an invoice. |
-| Credit Note | Adjusted | Credit has been fully applied against invoice(s). |
+### 🔁 Flow — Issuing a Credit Note Directly to a Client 
 
-### Credit Note Use Cases
-A credit note can be issued in the following situations:
-- Client returned goods (linked automatically to a sale return)
-- Overcharged on a previous invoice
-- Goodwill gesture or loyalty reward
-- Quality complaint settlement
-- Promotional discount applied after a sale
+1. Go to **Credit Note List** → tap **Create**. 
+2. Select client → enter amount → save. Status: **Not Adjusted**. 
+3. When the client makes a future purchase, create an invoice — available credit appears. 
+4. Apply the credit → save. Status updates to **Adjusted**. 
 
-### Credit Note: Refund vs. Adjustment
+--- 
 
-| Method | What Happens |
-|---|---|
-| **Refund** | Money is physically returned to the client (cash, bank, UPI). The credit note is marked as refunded. |
-| **Adjustment** | No money changes hands. The credit reduces the client's next invoice total. The credit note is marked as adjusted. |
-| **Partial Adjustment** | Part of the credit is used on one invoice; the remaining balance carries forward. |
-| **Multi-Invoice Adjustment** | A single credit note can be split and applied across multiple unpaid or partially paid invoices. |
+### 🔁 Flow — Adjusting One Credit Note Against Multiple Invoices 
 
-### Concepts
+1. Create or open a credit note → tap **Adjust Credit Note Against Invoice**. 
+2. Only invoices with unpaid or partially paid status will appear. 
+3. For each invoice: enter the adjustment amount. 
+4. Review the summary (total credit, amount adjusting, remaining balance). 
+5. Tap **Next** to confirm. Once fully applied, the credit note balance becomes zero. 
 
-**Why not delete the original invoice:** Deleting an invoice when goods are returned misrepresents financial history. The original sale happened and must remain in the books. A sale return is a *contra entry* — it offsets the original without erasing it. This is a fundamental principle of double-entry bookkeeping.
+--- 
 
-**Credit Note:** A formal document issued by a seller to a buyer, reducing the amount the buyer owes or crediting their account. It is the reverse of an invoice. Example: Invoice raised for ₹10,000 (10 items at ₹1,000 each). Client returns 2 items. Credit note issued for ₹2,000. The client now either receives ₹2,000 back or has ₹2,000 to offset a future purchase.
+### Key Fields 
 
-**Credit Note Feature Toggle:** When this feature is enabled in Settings, every sale return automatically generates a linked credit note. When disabled, sale returns are recorded without generating a credit note — only simple refunds are possible.
+| Field | What It Means | 
+|---|---| 
+| **Return Quantity** | Number of units being returned. Cannot exceed the quantity in the original invoice. | 
+| **Refund Amount** | The monetary value returned to the client in cash or via bank transfer. | 
+| **Credit Note Amount** | The value of credit issued to the client for future use. | 
+| **Credit Note Status** | Whether the credit has been used against an invoice yet. | 
+| **Sale Return Status** | Whether the monetary value of returned goods has been refunded or not. | 
+| **Adjustment Amount** | The portion of a credit note being applied to a specific invoice. | 
+| **Remaining Credit Balance** | The unused portion of a credit note still available for future transactions. | 
 
-**Which invoices appear in multi-invoice adjustment:** Only invoices where payment is *not received* or *partially received* are shown. Fully paid invoices do not appear because there is nothing to adjust against.
+### Statuses 
 
-### Alternate Terms
+| Document | Status | Meaning | 
+|---|---|---| 
+| Sale Return | Not Refunded | Return recorded; money not yet returned to client. | 
+| Sale Return | Refunded | Money has been returned to client. | 
+| Credit Note | Not Adjusted | Credit exists but has not yet been applied to an invoice. | 
+| Credit Note | Adjusted | Credit has been fully applied against invoice(s). | 
 
-| App Term | Also Known As |
-|---|---|
-| Sale Return | Sales Return, Return Inward, Customer Return, Goods Return |
-| Credit Note | CN, Credit Memo, Store Credit, Credit Voucher |
-| Refund | Reimbursement, Cashback, Money Back |
-| Adjust / Adjustment | Apply, Offset, Set Off, Redeem |
-| Carry Forward | Roll Over, Defer, Pending Credit |
+### Credit Note Use Cases 
 
-### 🎥 Video Tutorials
-- [Record Sale Return & Refund](https://www.youtube.com/watch?v=GamzorLvw1s&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=15)
-- [Adjust Sale Return with Credit Note](https://www.youtube.com/watch?v=GamzorLvw1s&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=16)
-- [Issue a Credit Note to Client](https://www.youtube.com/watch?v=tIphGNPEiVs&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=17)
-- [Adjust Credit Note Against Multiple Invoices](https://www.youtube.com/watch?v=mLJWo9v02Ro&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=18)
+A credit note can be issued in the following situations: 
+- Client returned goods (linked automatically to a sale return) 
+- Overcharged on a previous invoice 
+- Goodwill gesture or loyalty reward 
+- Quality complaint settlement 
+- Promotional discount applied after a sale 
+
+### Credit Note: Refund vs. Adjustment 
+
+| Method | What Happens | 
+|---|---| 
+| **Refund** | Money is physically returned to the client (cash, bank, UPI). The credit note is marked as refunded. | 
+| **Adjustment** | Refund is not made, instead the credit amount is reduced from the client's next invoice total. The credit note is marked as adjusted. | 
+| **Partial Adjustment** | Part of the credit is used on one invoice; the remaining balance carries forward. | 
+| **Multi-Invoice Adjustment** | A single credit note can be split and applied across multiple unpaid or partially paid invoices. | 
+
+### Concepts 
+
+**Why not delete the original invoice:** Deleting an invoice when goods are returned misrepresents financial history. The original sale happened and must remain in the books. A sale return is a *contra entry* — it offsets the original without erasing it. This is a fundamental principle of double-entry bookkeeping. 
+
+**Credit Note:** A formal document issued by a seller to a buyer, reducing the amount the buyer owes or crediting their account. It is the reverse of an invoice. Example: Invoice raised for ₹10,000 (10 items at ₹1,000 each). Client returns 2 items. Credit note issued for ₹2,000. The client now either receives ₹2,000 back or has ₹2,000 to offset a future purchase. 
+
+**Credit Note Feature Toggle:** When this feature is enabled in Settings, every sale return automatically generates a linked credit note. When disabled, sale returns are recorded without generating a credit note — only simple refunds are possible. 
+
+**Which invoices appear in multi-invoice adjustment:** Only invoices where payment is *not received* or *partially received* are shown. Fully paid invoices do not appear because there is nothing to adjust against. 
+
+### Alternate Terms 
+
+
+| App Term | Also Known As | 
+|---|---| 
+| Sale Return | Sales Return, Return Inward, Customer Return, Goods Return | 
+| Credit Note | CN, Credit Memo, Store Credit, Credit Voucher | 
+| Refund | Reimbursement, Cashback, Money Back | 
+| Adjust / Adjustment | Apply, Offset, Set Off, Redeem | 
+| Carry Forward | Roll Over, Defer, Pending Credit | 
+
+### 🎥 Video Tutorials 
+
+- [Record Sale Return & Refund](https://www.youtube.com/watch?v=GamzorLvw1s&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=15) 
+
+- [Adjust Sale Return with Credit Note](https://www.youtube.com/watch?v=GamzorLvw1s&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=16) 
+
+- [Issue a Credit Note to Client](https://www.youtube.com/watch?v=tIphGNPEiVs&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=17) 
+
+- [Adjust Credit Note Against Multiple Invoices](https://www.youtube.com/watch?v=mLJWo9v02Ro&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=18) 
+
+--- 
+
+### Interaction with other features - dependency , side effects 
+
+- **Invoice:** 
+The sales return is always linked to the original invoice against which the return is made. 
+- **Credit Note:** 
+A credit note is created for every sales return to record the amount to be refunded or adjusted. 
+- **Reports:**
+Sales returns are reflected in reports, helping you track returns and their impact on your business. 
+- **Client / Transaction History:**
+The client’s transaction history shows the sales return and updates their current balance (reduces the amount they owe). 
+- **Inventory:** 
+Stock is automatically updated when a sales return is created (items are added back to inventory). 
+- **Payment Received:**
+While recording payments, the sales return amount can be adjusted since it affects the total receivable from the client. 
 
 ---
 
