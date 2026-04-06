@@ -24,10 +24,10 @@
 ## 1. Company / Business Setup
 
 ### What It Is
-The company profile is the business identity stored in the app. It appears on every document the app generates — invoices, estimates, purchase orders, delivery notes and etc.. It includes the business name, owner details, contact information, logo, signature, and regional preferences.
+A feature that lets you set up and manage your business details either during first-time onboarding or later from the app settings (Primary Settings, Invoice Header & Footer).
 
 ### When & Who
-This is a one-time setup done by the business owner immediately after installing the app. It should be updated whenever business details change.
+Filled by the business owner during initial app setup (onboarding) and updated anytime later from settings whenever business information changes.
 
 ---
 
@@ -38,6 +38,11 @@ This is a one-time setup done by the business owner immediately after installing
 3. Fill in the required business details (see Field Reference below).
 4. Set your preferences (country, currency, financial year, date format).
 5. Tap **Save / Update**. Wait a moment for the database to update.
+6. Note:- [If you want access this information inside the app]
+
+    1. Go to Settings >> Primary Setting (Transaction No., Tax Identification Type, Country, Financial Year, Currency Format, Bumber Format, Date Format)
+
+    2. Go to Settings >> Invoice Header/Footer (Logo, Company Name, Address, Phone Number, Email Address, Website, Head Note/Foot Note, Signature and Paid Stamp)
 
 --- 
 
@@ -52,9 +57,11 @@ This is a one-time setup done by the business owner immediately after installing
 | **Country** | Sets regional defaults — currency symbol, tax label, date format. |
 | **Currency Format** | How monetary amounts are displayed (e.g., ₹1,000.00 or $1,000.00). |
 | **Financial Year Range** | The start and end months of the business's accounting period. |
+| **Tax Identification Type** | Simply means the kind of tax ID format being used based on a country’s system. |
 | **Date Format** | How dates appear on documents (e.g., DD/MM/YYYY or MM/DD/YYYY). |
 | **Company Logo** | Uploaded image that appears on all generated documents for branding. |
 | **Owner Signature** | Can be drawn manually in the app or uploaded as an image. Appears at the bottom of invoices. |
+| **Paid Stamp** | Paid Stamp feature display a clear **PAID** mark on document to indicate that the payment has been completed. |
 
 ### Concepts
 
@@ -93,11 +100,10 @@ This feature is useful for businesses that regularly deal with the same clients 
 
 ### 🔁 Flow
 
-1. Tap the **hamburger menu** (three lines, top-left) on the dashboard.
+1. Tap the **hamburger menu (☰)** (three lines, top-left) on the dashboard.
 2. Select **Client / Supplier**.
-3. To add a **client**, tap the client tab and fill in the details.
-4. Tap **Add This Client** to save.
-5. To add a **supplier**, switch to the Supplier tab and follow the same steps.
+3. To add a **client**,click on the **Add Client** and fill the details and save.
+4. To add a **supplier**, switch to the Supplier tab and follow the same steps.
 
 ---
 
@@ -105,28 +111,8 @@ This feature is useful for businesses that regularly deal with the same clients 
 
 | Field | What It Means |
 |---|---|
-| **Name** | Full name or business name of the client or supplier. |
-| **Email ID** | Used to send invoices, estimates, or purchase orders directly from the app. |
-| **Address** | Billing or shipping address. Appears on documents. |
-| **Contact Number** | Phone number for reference. |
 | **Opening Balance** | Choose whether the business needs to receive money from the client or if it needs to pay money to the client. - To Receive: The client owes money to the business. - To Give: The business owes money to the client. |
 | **GST Number (GSTIN)/ Tax ID** | Enter your business tax identification number (e.g., GSTIN, VAT, or TIN) |
-
-### Optional Details (via "Add More Info")
-Additional fields available for richer party profiles: home address, clothing size, alternate contact, and other custom information. Useful for businesses like boutiques or tailors who maintain detailed client records.
-
-### Concepts
-
-**Opening Balance:** When a business starts using a new accounting app, existing clients or suppliers may already have an outstanding balance from prior transactions. Instead of recreating old invoices, this balance is entered directly as an opening figure. It carries forward into the ledger and is factored into payment tracking from day one.
-
-**Client vs. Supplier distinction:** The same business entity can sometimes be both a client and a supplier (e.g., a business that both buys from and sells to the same company). In SIM, they are stored as separate records under each category.
-
-### Optional sub-feature: -  
-
-**Client/Supplier Category:** This feature lets you group your clients and suppliers (e.g., Retail, e-Commerce, POS).
-    - It is not visible by default  
-    - To use it, go to Settings → Client/Supplier Categorization Settings and enable it 
-    - Once enabled, you will see the Category Option in the Client/Supplier form  
 
 
 ### Alternate Terms
@@ -138,7 +124,13 @@ Additional fields available for richer party profiles: home address, clothing si
 | Client/Supplier List | Party Master, Contact Book, Ledger, Account Directory |
 | Opening Balance | Carried Forward Balance, Prior Balance, Outstanding Balance |
 
-### Customer/Supplier Insight: -  
+### Optional Sub-Features: 
+
+**Transaction history-** It shows the sales and payment that were recorded in a table format. User can select the transaction by tapping the rows that he wants to refer to and add changes if necessary 
+
+**Credit limit**: Up to what limit would you allow the client to obtain credit from you against invoices. The customer insight records and shows for each client to remind you if the client has crossed the threshold limit that you have set for the client 
+
+#### Customer/Supplier Insight: -  
 Gives a complete summary of transactions, including credit limits, upcoming dues, overdue/long overdue amounts, pending items, payment behavior, and activity—all in one place. 
 
 | Section | What It Shows | Why It’s Useful |
@@ -155,6 +147,24 @@ You can easily download your Client/Supplier list using the Export Excel option.
 ### Batch Upload: 
 Easily upload multiple clients at once using the Batch Upload feature—simply select the Client option, download the template, fill in client details, and upload the file to add them in bulk. 
 
+---
+
+### Interaction with other features - dependency , side effects 
+
+
+Customer insights – It shows the entire information of the client/customer to give you a bird’s eye view of the data collected till date: it’s credit limit, the due date, the invoices/estimates that are pending, the graphical trend of the sales, top-5 products that are frequently order by them 
+
+Report – Top 5 customers on the basis 
+
+- **Customer Category-** If there are existing client, you can create categories to sort the client list to prioritize at different levels 
+
+- **Payment received/ Payment Paid-** To record the payment you have to have a client/supplier against whom the payment is recorded 
+
+- **Receivables / Payables–** That shown a list of clients that owes you and a total receivable about 
+
+- **Batch Upload–** Easily upload multiple clients at once using the Batch Upload feature—simply select the Client option, download the template, fill in client details, and upload the file to add them in bulk.
+--- 
+
 ### 🎥 Video Tutorial
 [How to Add Client & Supplier](https://www.youtube.com/watch?v=hTjFjCd4FKM&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=3)
 
@@ -163,43 +173,35 @@ Easily upload multiple clients at once using the Batch Upload feature—simply s
 ## 3. Products & Services
 
 ### What It Is
-The product/service catalogue is a master list of everything the business sells. Each entry stores the item's name, pricing, tax rate, unit of measurement, and whether inventory should be tracked for it. When creating an invoice or purchase record, items are selected from this list rather than entered manually each time.
+The Products & Services section helps you manage all the goods and services your business offers. You can save each item’s key details—like name, description, price, and tax—and reuse them in invoices to make billing faster and more consistent. 
 
-### When & Who
-Used by all business types — retailers, wholesalers, service providers, manufacturers. Products are typically set up before the first invoice. They can also be created on the fly during invoice creation.
+### Who should use this? 
+All businesses—whether selling physical goods (a shop), digital products (a SaaS), or services (a consultant or salon).
 
-### Product vs. Service Distinction
-- **Product:** A physical item that can be stocked, counted, and tracked. Inventory management applies.
-- **Service:** An intangible offering (e.g., consulting, design, repairs). No physical stock exists, so inventory tracking should not be enabled.
+### When do you use it? 
+Set up before creating your first invoice or add products directly while creating an invoice. 
 
 ---
 
 ### 🔁 Flow — Adding a Single Product or Service
 
-1. From the dashboard, tap **hamburger menu** → **Products** → **Show Product List** → **Create New Product**.
-2. Choose **product** or **service** type.
-3. Fill in the required details (see Field Reference below).
-4. Enable or disable **Product Inventory** depending on whether stock tracking is needed.
-5. Tap **Save**.
+1. Access Product Management  
+  a. From the dashboard, tap the hamburger menu (☰).  
+  b. Navigate to Products → Show Product List.  
 
----
+2. Start Creating a Product  
+  a. Tap Create New Product.   
 
-### 🔁 Flow — Batch Upload via Excel
+3. Fill in Details  
+  a. Complete all required fields  (This typically includes name, description, price, category, etc.)  
 
-1. Go to **Settings** → **Batch Upload** → **Create New Product**.
-2. Download the **template file** (contains required column headers).
-3. Fill in your products in the spreadsheet following the header format.
-4. Upload the file → tap **Yes** to confirm.
-5. Review the product preview → tap **Save Products**.
+4. Configure Inventory  
+  a. Enable Product Inventory if you want to track stock levels.  
+  b. Disable if inventory tracking is not needed.  
 
----
+5. Save  
 
-### 🔁 Flow — Product Categorization
-
-1. Go to **Settings** → **Enable / Disable Features** → scroll to **Product Categorization** → toggle **on**.
-2. Tap **Create Category** → enter a name and standard unit → save.
-3. Open any product → find the **Product Category** field → assign a category.
-4. When creating new products, you can assign or create categories on the spot.
+  a. Tap Save to add the product/service to your list. 
 
 ---
 
@@ -207,28 +209,18 @@ Used by all business types — retailers, wholesalers, service providers, manufa
 
 | Field | What It Means |
 |---|---|
-| **Product Name** | What the item is called. Appears on invoices exactly as entered. |
-| **Sale Rate** | The price at which the business sells the item to clients. |
-| **Purchase Rate** | The price at which the business buys the item from suppliers. Used for profit calculation. |
-| **Tax Rate** | The GST or VAT percentage applicable to this product/service. Applied automatically when added to an invoice. |
-| **Measurement Unit** | The unit of quantity — e.g., pcs, kg, litre, box, hours. Required for inventory tracking and e-way bill compliance. |
-| **Enable Product Inventory** | Toggle per product. When on, stock quantity is tracked automatically through purchases and sales. Should be off for services. |
-| **Opening Stock** | The quantity already on hand when the product is first added to the app. Entered only once during setup. |
-| **Minimum Alert Level** | The stock quantity below which the app triggers a low-stock warning, prompting reorder. |
-| **HSN Code** | A standardized numeric code that classifies the product for GST and trade purposes. Mandatory for e-invoicing and e-way bills in India. |
-| **Product Category** | A user-defined group for organizing products (e.g., Electronics, Furniture, Clothing). |
+| **Sale Rate** | Price at which the item is sold to clients. |
+| **Purchase Rate** | Price at which the item is purchased from suppliers; used for profit calculation. |
+| **Tax Rate** | Applicable GST or VAT percentage. Automatically applied invoices. |
+| **Opening Stock** | Initial stock quantity when the product is added. |
+| **Minimum Alert Level** | Stock threshold that triggers a low-stock warning for reordering. |
+| **HSN Code** | A number that identifies a product. |
 
 ### Optional Features
 
-**Batch Upload (Excel):** Multiple products can be uploaded at once using a spreadsheet template available in Settings → Batch Upload. The same method works for bulk-uploading clients, suppliers, or updating existing product details.
-
-**Product Categorization:** Products can be grouped into custom categories. Categories can have a standard unit defined so it applies to all products in that category by default. Must be enabled in Settings → Enable/Disable Features.
-
-### Concepts
-
-**HSN Code (Harmonised System of Nomenclature):** A globally standardized 6–8 digit classification code for goods, used in customs, trade, and taxation. In India, HSN codes are mandatory on GST invoices and e-way bills. The number of digits required depends on the business's annual turnover (4-digit for smaller businesses, 6-digit for turnover above ₹5 crore). Example: Mobile phones fall under HSN code 8517.
-
-**Sale Rate vs. Purchase Rate:** The sale rate is what the customer pays. The purchase rate is what the business paid the supplier. The difference drives the gross profit margin. Example: Purchase rate ₹100, sale rate ₹150 → gross margin = ₹50 (33%).
+**Product Categorization:** 
+- This feature lets you group your products into categories (e.g., Electronics, Services, Raw Materials). 
+- It is not visible by default. To use it, go to Settings → Product Categorization Setting and enable it.Once enabled, you can create categories using the “Add Category” button and assign them to products. You can also enable “Group Line Items by Product Category” to automatically group items by category invoices and other documents.
 
 ### Alternate Terms
 
@@ -241,6 +233,29 @@ Used by all business types — retailers, wholesalers, service providers, manufa
 | HSN Code | Tariff Code, Commodity Code, Product Classification Code |
 | Product Catalogue | Item Master, Price List, Inventory List, Product Database |
 | Measurement Unit | Unit of Measure (UOM), Unit |
+
+### Manage Product Rates: 
+Let's quickly set or update the selling price (Sale Rate) and purchase cost (Buy Rate) for your products. 
+
+**How to use**: 
+1. Go to Product → Manage Product Rates.  
+2. Find the product using the search box or scroll in the list.  
+3. Enter the selling price under Sale Rate and the cost price under Buy Rate.  
+4. Click Done to save or cancel discard changes. 
+
+
+### Export Product List to Excel:  
+You can easily download your Product List using the Export Excel option. 
+
+### Batch Upload (Products via Excel) 
+- Add multiple products at once using an Excel file. 
+- Go to Settings → Batch Upload → Create New Product. 
+Download the template, fill in product details, and upload it. 
+Confirm, review the preview, then tap Save Products. 
+
+### Online store:  
+Products added to the Product List automatically appear in the Online Store
+
 
 ### 🎥 Video Tutorials
 - [How to Add Product or Service](https://www.youtube.com/watch?v=EmURS_9WiG4&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=4)
@@ -261,8 +276,8 @@ Used by any business that sells goods or services — freelancers, retailers, wh
 
 ### 🔁 Flow
 
-1. Tap the **+ (plus) button** on the dashboard.
-2. Set the **invoice date**. Optionally add a **due date**.
+1. From the dashboard, **swipe right to left** to find the **Invoice** section.
+2. Tap **Add New Invoice** Set the invoice date. Optionally add a due date.
 3. Tap **Client Name** → select an existing client or create a new one inline.
 4. Tap **Add Items** → select products/services or add new ones on the spot.
 5. Apply discount, tax, and shipping charges if applicable.
@@ -276,19 +291,12 @@ Used by any business that sells goods or services — freelancers, retailers, wh
 
 | Field | What It Means |
 |---|---|
-| **Invoice Date** | The official date the invoice is raised. Used for accounting, GST filing, and payment tracking. |
 | **Due Date** | The deadline by which the client must make payment. |
-| **Client Name** | The party being billed. Linked to their record in the client list. |
 | **Items** | The goods or services being sold. Each line includes name, quantity, rate, tax, and total. |
 | **Discount** | A reduction applied to the price. Can be a flat amount (e.g., ₹200 off) or a percentage (e.g., 10% off). Applied per item or on the total. |
 | **Tax** | GST, VAT, or other tax added to the invoice. Applies based on the tax rate set on each product. |
 | **Shipping Charges** | Additional charges for delivery or freight. Added as a separate line item. |
-| **Advance Payment** | An amount already received from the client before the invoice is finalized. Reduces the outstanding balance shown on the invoice. |
-| **Header / Footer** | Custom text added above and below the invoice body — for greetings, branch details, or messages. |
-| **Terms & Conditions** | Legal or business terms governing the transaction — e.g., return policy, payment terms. |
 | **Custom Fields** | User-defined labels and values that appear at the top of the invoice — e.g., PO Number, Vehicle Number, LR Number. |
-| **Client Signature Field** | A signature box for the client to acknowledge receipt of goods or services. |
-| **Catalog Image** | An image of the business's product/service brochure attached to the invoice for branding. |
 
 ### Invoice Statuses
 
@@ -298,19 +306,26 @@ Used by any business that sells goods or services — freelancers, retailers, wh
 | **Partially Received** | Some payment has been collected; a balance remains. |
 | **Fully Received / Paid** | The complete invoice amount has been collected. |
 
-### Concepts
 
-**Invoice vs. Receipt:** An invoice is a *request* for payment — it says "you owe me this amount." A receipt is a *confirmation* of payment — it says "I received this amount." When an invoice is marked as paid in SIM, it serves as the payment record.
+### Optional Features
 
-**Tax Invoice:** In India, a tax invoice is issued by a GST-registered business for taxable sales. It must include the seller's GSTIN, HSN codes, and a breakdown of GST components (CGST + SGST for intra-state, IGST for inter-state). It is the document a buyer needs to claim Input Tax Credit (ITC).
+**NOTE**: This feature will be reflected in invoices once the setting is enabled from the main settings
 
-**B2B vs. B2C:**
-- **B2B (Business to Business):** Invoice raised to another GST-registered business. Required for e-invoicing compliance in India.
-- **B2C (Business to Consumer):** Invoice raised to an individual or unregistered buyer. Different GST reporting rules apply.
+- **Recurring Invoice-** A recurring invoice is an invoice that is automatically created and sent at regular intervals.
 
-**Discount types:**
-- **Amount-based discount:** A fixed rupee/dollar value subtracted (e.g., ₹100 off).
-- **Percentage discount:** A proportion of the item or total price subtracted (e.g., 5% off).
+- **B2B Invoice-** An e-invoice (electronic invoice) is a digitally created and government-validated invoice used mainly for GST reporting.
+
+- **e-way Bills-** An e-way bill is a digital document required for transporting goods
+Commission  Commission is an amount of money paid to someone for making a sale or helping complete a deal.
+
+- **Delivery Note-** A delivery note is a document sent along with goods when they are delivered to a customer.
+
+- **Credit Note-** A credit note is a document issued by a seller to a buyer to reduce the amount the buyer owes.
+
+- **Sale Return-** A sale return happens when a customer returns goods they bought from a seller.
+
+- **Reports-** Sale/Payment Report, sales by client, sales by product,sales by category,History of sales/payment, invoice aging, detailed sales report.
+
 
 ### Alternate Terms
 
@@ -356,9 +371,6 @@ Used by freelancers, contractors, agencies, service providers, and any business 
 | Field | What It Means |
 |---|---|
 | **Estimate Date** | The date the quote is prepared. Used to track the age and validity of the quote. |
-| **Client Name** | The party receiving the price proposal. |
-| **Items / Services** | What is being quoted — name, quantity, rate, and tax for each line. |
-| **Discount** | A price reduction offered as part of the proposal. |
 | **Banking Details** | The business's bank account information added so the client knows how to pay upon acceptance. |
 | **UPI QR Code** | A scannable QR code linked to the business's UPI ID. The client can scan and pay instantly using any UPI-enabled app. |
 | **Pay Now Button (PayPal)** | An embedded direct payment link added to the estimate for online payment. |
@@ -387,34 +399,26 @@ Used by freelancers, contractors, agencies, service providers, and any business 
 ## 6. Sale Orders
 
 ### What It Is
-A sale order is an internal record created when a customer confirms they want to buy, but the goods have not yet been delivered and no final invoice has been raised. It captures the order details, reserves stock intent, and initiates the fulfillment process. Once goods are delivered and an invoice is created, the sale order is linked to it and marked complete.
+A sale order is created when a customer confirms they want to buy from you, but you haven’t delivered the goods or raised the final invoice yet. It serves as an internal record that reserves stock and initiates the fulfillment process.
 
 ### When & Who
-Used by wholesalers, distributors, manufacturers, and B2B businesses where orders are placed in advance and fulfilled over time. Common when a customer sends a formal Purchase Order (PO) that the business needs to acknowledge and act on.
+Wholesalers, distributors, manufacturers, or any business where orders are placed in advance and fulfilled later. Common in B2B trade. When: When a customer sends you an order and you want to formally accept it, reserve inventory, and track delivery.
 
 ---
 
-### 🔁 Flow
+### 🔁 Flow for creating the Sale Order
 
 1. From the dashboard, **swipe right to left** to find the **Sale Order** section.
 2. Tap **Create Sale Order** → fill in client and item details → **Save**.
 3. Status: **Pending** (order accepted, not yet delivered/invoiced).
-4. When ready to deliver: tap the sale order → **Make Invoice**.
-5. Go to the invoice list → tap the invoice → create a **Delivery Note** → save.
-6. Once payment is received, tap the invoice → **Mark as Received**.
-7. Sale order status updates to **Completed**.
 
 ---
 
-### Key Fields
+### 🔁 Flow for creating the Sale Order to Invoice
+1. When ready to deliver: tap the Sale order → **Make Invoice** → save.
+2. Once payment is recieved, Sale order status updates to **Completed**.
 
-| Field | What It Means |
-|---|---|
-| **Sale Order Date** | The date the customer's order was accepted. |
-| **Client** | The customer who placed the order. |
-| **Items** | Products/services ordered — with quantity, rate, and tax. |
-| **Status** | Current stage of the order (see statuses below). |
-| **Delivery Note** | A document created at the time of dispatch listing items being delivered. Accompanies physical goods. |
+---
 
 ### Sale Order Statuses
 
@@ -422,23 +426,17 @@ Used by wholesalers, distributors, manufacturers, and B2B businesses where order
 |---|---|
 | **Pending** | Order accepted but goods not yet delivered or invoiced. |
 | **Completed** | Invoice has been raised and payment received. |
+| **Manually Completed** | You force-close the sale order manually, even if it’s not fully fulfilled or completed. |
+| **Cancelled** | The sale order is completely cancelled and will not be processed. |
 
 ### Concepts
 
 **Sale Order vs. Invoice:** A sale order is a *commitment to sell* — it records the customer's confirmed intent to purchase. An invoice is the *formal bill* generated after delivery and requesting payment. A sale order does not affect inventory or accounts until it is converted to an invoice.
 
-**Typical B2B Order Fulfillment Cycle:**
-Customer sends Purchase Order → Business creates Sale Order → Goods packed and dispatched with Delivery Note → Final Invoice raised → Payment collected → Sale Order marked Completed.
-
-**Delivery Note (Challan):** A document that travels with the physical goods being dispatched. It lists items and quantities delivered and serves as proof of delivery. It is separate from the invoice — it does not request payment. The buyer signs it to acknowledge receipt.
-
-### Alternate Terms
-
-| App Term | Also Known As |
-|---|---|
-| Sale Order | Sales Order, SO, Customer Order, Work Order, Booking |
-| Delivery Note | Challan, Dispatch Note, Packing Slip, Delivery Challan, Goods Dispatch Note (GDN) |
-| Pending | Open, Unfulfilled, In Progress |
+**Reference Number on Invoice:**
+When you create an invoice from a sale order, the invoice is automatically assigned the corresponding sale order reference number.
+This helps you easily track and search for invoices linked to a specific sale order from the invoice list.
+Using two sale orders with same customer we can create a single invoice record.
 
 ### 🎥 Video Tutorial
 [How to Create a Sale Order](https://www.youtube.com/watch?v=swWyOktSWvg&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=22)
@@ -453,13 +451,26 @@ A Purchase Order (PO) is a document sent by the business to a supplier to formal
 ### When & Who
 Used by retailers, wholesalers, manufacturers, and any business that procures stock from suppliers in advance. A PO is raised when the business wants to formalize an order before goods are dispatched by the supplier. Common in formal B2B procurement where documentation is required at every step.
 
+---
+
+### 🔁 Flow for creating the Purchase Order
+
+1. From the dashboard, **swipe right to left** to find the **Purchase Order** section.
+2. Tap **Create Purchase Order** → fill in client and item details → **Save**.
+3. Status: **Pending** (order accepted, not yet delivered/invoiced).
+
+---
+
+### 🔁 Flow for creating the Purchase Order to Purchase Record
+1. When ready to deliver: tap the Purchase order → **Make Purchase Record** → save.
+2. Once payment is paid, Purchase order status updates to **Completed**.
+
+---
+
 ### Key Fields
 
 | Field | What It Means |
 |---|---|
-| **Supplier** | The vendor the order is being placed with. |
-| **Purchase Order Date** | The date the order is officially created and sent. |
-| **Items** | Products being ordered — name, quantity, agreed rate, and applicable tax. |
 | **Buy Rate / Purchase Rate** | The agreed price per unit with the supplier at the time of ordering. |
 | **Discount** | Any price reduction agreed upon with the supplier for this order. |
 
@@ -469,6 +480,8 @@ Used by retailers, wholesalers, manufacturers, and any business that procures st
 |---|---|
 | **Pending** | Order has been created and sent but goods have not yet been received. |
 | **Completed** | Goods have been received and a purchase record has been created against this PO. |
+| **Manually Completed** | You force-close the PO manually, even if it’s not fully fulfilled or completed. |
+| **Cancelled** | The purchase order is completely cancelled and will not be processed. |
 
 ### Concepts
 
@@ -476,13 +489,10 @@ Used by retailers, wholesalers, manufacturers, and any business that procures st
 
 **Why use a Purchase Order:** A PO protects both parties. The supplier has a documented commitment to fulfill. The buyer has a record of what was agreed — price, quantity, items — which can be verified when goods arrive. Discrepancies between the PO and what is received are caught at the point of entry.
 
-### Alternate Terms
-
-| App Term | Also Known As |
-|---|---|
-| Purchase Order | PO, Procurement Order, Supply Request, Indent |
-| Supplier | Vendor, Seller, Distributor, Creditor |
-| Buy Rate | Agreed Rate, Order Price, Purchase Price |
+**Reference Number on Purchase Record:**
+When you create an purchase record from a purchase order, the purchase record is automatically assigned the corresponding purchase order reference number.
+This helps you easily track and search for purchase linked to a specific purchase order from the purchase list.
+Using two purchase orders with same supplier we can create a single purchase record.
 
 ### 🎥 Video Tutorial
 - [Purchase Order & Record](https://www.youtube.com/watch?v=lKUJ9sprbJU&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=21)
@@ -497,18 +507,27 @@ A Purchase Record is the accounting entry created when goods are actually receiv
 ### When & Who
 Used by any business that buys physical goods from suppliers — shops, wholesalers, distributors, manufacturers. A purchase record is created at the moment goods arrive, regardless of whether a PO was raised beforehand.
 
+---
+
+### 🔁 Flow
+
+1. From the dashboard, **swipe right to left** to find the **Purchase** section.
+2. Tap **Add New Purchase Record** Set the purchase date. Optionally add a due date.
+3. Tap Supplier Name → select an existing supplier or create a new one inline.
+4. Tap Add Items → select products/services or add new ones on the spot.
+5. Apply discount, tax, and shipping charges if applicable.
+6. In the Payment section, record any advance or instant payment Paid.
+7. Optionally customize the purchase record (header, footer, signature, image, notes, custom fields).
+8. Tap Preview → then Save, Send, Print, or Change Template.
+
+---
+
 ### Key Fields
 
 | Field | What It Means |
 |---|---|
-| **Supplier** | The vendor from whom goods were received. |
-| **Purchase Date** | The date the goods were received and the record is created. |
-| **Items** | Products received — name, quantity, buy rate, and tax. |
-| **Buy Rate / Purchase Rate** | The price paid to the supplier per unit. Used for inventory cost and profit tracking. |
 | **Opening Stock** | The quantity already in possession when the product was first set up in the app. Should only be entered once — during initial product creation. Never enter it again in a purchase record for an existing product, as it will double-count inventory. |
 | **Minimum Alert Level** | The reorder threshold for this product. The app notifies when stock drops below this quantity. |
-| **Discount** | Price reduction received from the supplier on this purchase. |
-| **Payment Status** | Whether the supplier has been fully paid, partially paid, or not yet paid. |
 
 ### Purchase Record Statuses
 
@@ -523,11 +542,14 @@ If a product's opening stock was already entered during product creation, **do n
 
 ### Concepts
 
-**GRN (Goods Received Note):** A document that confirms goods ordered from a supplier have been physically received and inspected. A purchase record in SIM serves this function — it is the internal proof that stock came in.
+**Purchase Record:** A document that confirms goods ordered from a supplier have been physically received and inspected. A purchase record in SIM serves this function — it is the internal proof that stock came in.
 
 **Buy Rate vs. Sale Rate:** The buy rate is what the business paid the supplier per unit. The sale rate is what the business charges its customers. The difference between the two is the gross profit per unit. Example: Buy at ₹100, sell at ₹150 → gross profit = ₹50 per unit (33% margin).
 
-**Partial Receipt:** If a supplier sends only part of an order, only the received items are recorded in the purchase record. The original PO remains open until the rest of the goods arrive.
+**Discount types:** Amount-based discount: A fixed rupee/dollar value subtracted (e.g., ₹100 off). - Percentage discount: A proportion of the item or total price subtracted (e.g., 5% off).
+
+**Note-**
+Reports - You can check purchase/ payment report, detailed purchase report, Purchase order report.
 
 ### Alternate Terms
 
@@ -583,6 +605,10 @@ Relevant only for businesses dealing in physical goods — shops, wholesalers, d
 3. Choose to **increase** (stock in) or **decrease** (stock out) the quantity.
 4. Enter the quantity and reason.
 5. Save — the change is applied instantly.
+
+### Flow — Automatic Inventory Adjustment
+When a user creates a purchase record, the stock quantity for the respective products is automatically updated in the inventory.
+
 
 ---
 
@@ -664,6 +690,29 @@ Uses a single manually defined cost price regardless of actual purchase price fl
 | FIFO | First In First Out, Queue Method |
 | Weighted Average | Moving Average, Average Cost Method, WAC |
 | Inventory Valuation | Stock Valuation, Cost Method |
+
+### Interaction with Other Features (Dependencies & Side Effects)
+
+- **Reorder Management:**
+This feature allows you to generate purchase orders based on the minimum stock level set when enabling inventory for a product.
+
+- **Batch Upload (Inventory Data):**
+You can update the existing product list or add inventory-related data during product creation using batch upload.
+
+- **Sales Return:**
+If a sales return is generated from an invoice (i.e., goods are returned by the customer), the corresponding sales return document will update the inventory.
+
+- **Cost of Goods Sold (COGS):**
+COGS is directly related to the inventory valuation method used.
+
+### Optional Sub-Feature
+
+- **Physical Stock-Take:**
+At the end of the day, there may be differences between the inventory calculated by the app and the actual physical stock in your warehouse.
+This feature allows you to correct such differences by adding Reconciliation Edits to the product list along with their current stock.
+
+Also add Reconciliation Edit in the Field References section of Inventory Management.
+
 
 ### 🎥 Video Tutorials
 - [How to Enable Inventory](https://www.youtube.com/watch?v=wU3bhD1PhSs&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=8)
@@ -796,30 +845,101 @@ A credit note can be issued in the following situations:
 ## 11. Sub Users & Approvals
 
 ### What It Is
-Sub users are separate login accounts created by the business owner for team members — employees, sales staff, accountants. Each sub user is assigned a role that defines what they can and cannot do in the app. The Transaction Approval feature adds an additional layer of control — any action taken by a sub user requires the owner's sign-off before it becomes live in the system.
+Sub users allow a business owner to give other people (staff, accountants, sales team) limited access to the app. Instead of sharing your owner credentials, you create separate logins for each team member with specific roles and permissions. The approval workflow ensures that all transactions made by staff require sign-off by the owner before becoming final. 
+
+Who should use this: Business owners with employees, accountants, or sales staff who need to use the app. Especially useful for businesses where financial control and oversight are important. 
 
 ### When & Who
-Relevant for businesses with more than one person using the app. Particularly important when financial control and oversight are needed — for example, when staff can create invoices but only the owner should approve and finalize them.
+- When your business grows beyond a single user. 
+- When staff create invoices but only you approve/finalize them. 
+- When different employees handle specific tasks (e.g., invoicing, payments) and require oversight to prevent errors. 
+- When managing multiple sales reps and restricting access to sensitive data (e.g., financial reports). 
 
 ---
 
 ### 🔁 Flow — Creating Sub Users
 
-1. Tap **hamburger menu** → **Sub User Management** → **Manage Sub Users**.
-2. Tap **+** → enter sub user details → select a **role** → tap **Submit**.
-3. Sub user receives login credentials and can access the app with their assigned permissions.
-4. You can **disable, edit, or delete** a sub user at any time.
+1. Tap hamburger menu (☰) → Sub User Management → Manage Sub Users. 
+2. Tap + → enter the required sub user details → select a role (check permissions/you can create a custom role with you choice of permission)→ tap Submit. 
+
+Please Note: 
+
+- Sub user receives login credentials and can access the app with their assigned permissions. 
+- Create unique login credentials for sub-user, (share the details with only the respective person to ensure privacy ) 
+- You can disable, edit, or delete a sub user at any time.
 
 ---
 
 ### 🔁 Flow — Transaction Approval Workflow
 
-1. Enable **Transaction Requires Approval** in Sub User Management.
-2. Sub user creates an invoice / estimate → it enters the **Approval Pending** queue (not yet live).
-3. Sub user cannot edit or delete the transaction once submitted.
-4. Owner logs in → **Cloud Account** → **Approval Pending Transactions**.
-5. If the transaction involves a newly created client or product (not yet in the database), approve the client/product **first**, then approve the invoice.
-6. Once approved, the invoice is added to the main transaction list and is live.
+- Enable Transaction Requires Approval in Sub User Management. 
+
+SUB-USER STEPS- 
+
+1. Sub user creates an invoice / estimate → it enters the Approval Pending queue 
+2. Sub-user can check for the status of the documents created by him –  
+Go to cloud account → Approval Pending Transaction 
+3. Sub-User can also check if the document was rejected by selecting Approval Rejected Transaction. 
+4. Sub user can update the documents present in Approval pending Transactions 
+5. Edit the document and tap on Update .Also once he does the required changes, document moves back to the  
+‘Approval Pending Transaction’ section, for the Owner to approve 
+ 
+OWNER / MAIN USER STEPS- 
+
+6. Owner logs in → Cloud Account → Approval Pending Transactions. 
+7. If the transaction involves a newly created client or product (not yet in the database), approve the client/product first, then approve the invoice. 
+8. Once approved, the invoice is added to the main transaction list and is live. 
+
+---
+
+🔁 Flow — Selecting Role for the Sub user you are creating 
+
+1. Use the predefined roles: Partner/Manager, Sales and Billing, Purchase manager, Payment collector, Accountant 
+2. Go to manage Sub- user settings, tap on Add Sub-User 
+3. Under Role tap on the dropdown ‘Please select a role before proceeding 
+4. Select from the list of roles available 
+
+---
+
+🔁 Flow — Creating a custom category of sub-user: By Add Custom Role 
+
+1. Go to manage Sub- user settings, tap on Add Sub-User 
+2. Under Role tap on the dropdown ‘Please select a role before proceeding 
+3. Tap ‘+Add Custom Role’ 
+4. Write the Name of the type of role- To create a category 
+5. Check or un-check the list of documents or permission that this role can access 
+6. Tap on ‘Save Role’ 
+
+--- 
+
+🔁 Flow — Specify the type of access /permission granted to the Sub-user Role 
+
+- Go to manage Sub- user settings, tap on Add Sub-User 
+- You can edit a custom role you have created OR You can create a fresh custom role 
+
+---
+
+🔁 Flow —For Rejected Transactions 
+
+1. Tap hamburger menu (☰)
+2. Go to cloud account → Tap on ‘Approval Rejected Transaction’ 
+3. Sub user can edit tap on edit icon and → Tap on update 
+(The document moves back to Approval Pending) 
+4. Or delete the record 
+
+---
+
+⚙️ Optional Sub-Features: 
+
+- Predefined Roles: Choose from built-in roles (e.g., salesperson, accountant) that come with preset permissions. 
+
+- Custom Role: Define your own role with exactly the permissions you want — granular control over what each sub user can see and do. 
+
+- Disable Sub User: Temporarily remove access without deleting the account (e.g., for a seasonal employee). 
+
+- Approval for New Parties/Products: When a sub user creates a new client or product that doesn’t exist in the database, the owner must approve the new record before approving any related transaction. 
+
+- Switch user – if a single device is used by multiple sub-users they can user Switch user to login two accounts at the same time 
 
 ---
 
@@ -829,7 +949,7 @@ Relevant for businesses with more than one person using the app. Particularly im
 |---|---|
 | **Sub User Name** | The display name of the team member. |
 | **Role** | The assigned position that determines the sub user's permission set. |
-| **Permissions** | Individual access controls — what the sub user can create, view, edit, or delete. |
+| **Permissions** | Individual access controls — e.g., can create invoices, cannot delete, cannot view reports. - Allow Individual access controls (Access Invoice document but not Payment ) - You also specify the type – View, edit, delete |
 | **Transaction Requires Approval** | When enabled, all transactions created by sub users enter a pending queue and are not live until the owner approves them. |
 | **Approval Status** | Pending = awaiting owner review. Approved = live in the system. Rejected = not accepted. |
 
@@ -841,12 +961,6 @@ Relevant for businesses with more than one person using the app. Particularly im
 ### Roles
 - **Predefined Roles:** Built-in roles with preset permissions (e.g., salesperson, accountant).
 - **Custom Role:** The owner can define a role with exactly the permissions required — granular control over each feature.
-
-### Approval Workflow Logic
-- When Transaction Requires Approval is enabled, a sub user's transactions do not appear in the main list until approved.
-- Sub users cannot edit or delete a transaction once it has been submitted for approval.
-- If a sub user creates a **new client or product** that doesn't yet exist in the database, the owner must approve the new record *before* approving the transaction linked to it.
-- Fully approved transactions are then visible and active in the system like any owner-created transaction.
 
 ### Concepts
 
@@ -865,11 +979,35 @@ Relevant for businesses with more than one person using the app. Particularly im
 | Transaction Requires Approval | Maker-Checker, Dual Control, Approval Workflow, Authorization Workflow |
 | Approval Pending | Awaiting Review, Under Approval, Pending Authorization |
 
+
+### Interaction with Other Features — Dependencies & Side Effects 
+
+- When Transaction Approval is enabled for a sub user, all their transactions require owner approval. 
+- Proper device syncing is required to reflect updates across users. 
+- Clients/products created by a sub user must be approved; otherwise, they cannot be used by the main user. 
+- Payment approval depends on the approval of the related invoice. 
+- Sub users cannot access features not enabled by the main user (e.g., Inventory, Commission, Delivery Note, Cash/Bank Transfer, Other Income). 
+- If restricted, sub users cannot edit rates in invoices, estimates, sales orders, or purchases. 
+- The main user can reset/change a sub user’s password to revoke access. 
+
+ --- 
+
+### Logical Behaviors (Different Scenarios) 
+
+- Maximum 3 active sub users allowed. 
+- Feature available only for paid users. 
+- Sub users have limited access to settings. 
+- If a client is rejected, related documents (Invoice, delivery note,etc.)are permanently deleted from approval list. Sub-user will have to recreate the document. 
+- Sub user can edit documents in Approval Pending, but cannot modify them after approval. 
+
+--- 
+
 ### 🎥 Video Tutorials
 - [How to Create Sub Users](https://www.youtube.com/watch?v=rfirjho4Njs&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=11)
 - [Transaction Requires Approval](https://www.youtube.com/watch?v=SAFW1J735_s&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=12)
 
 ---
+
 
 ## 12. GST Compliance — India
 
@@ -903,6 +1041,11 @@ SIM integrates directly with India's government GST infrastructure, enabling bus
 **Input Tax Credit (ITC):** A mechanism that allows GST-registered businesses to reduce their GST liability by the GST they have already paid on their purchases. For a buyer to claim ITC, the seller must have issued a valid tax invoice with a proper IRN (for applicable cases).
 
 ---
+### A. GSP Setup for E-Invoice
+
+#### What It Is
+A one-time setup that creates GSP credentials on the government e-invoice portal and links them to SIM. Without this, SIM cannot communicate with the government system to generate IRNs.
+
 
 #### 🔁 Flow- A. GSP Setup for E-Invoice
 
@@ -917,6 +1060,29 @@ SIM integrates directly with India's government GST infrastructure, enabling bus
 7. Add these credentials in SIM under **Settings** → **E-Invoice Settings**.
 
 ---
+
+#### Key Fields
+
+| Field | Explanation |
+|---|---|
+| **GSTIN** | Your 15-digit GST Identification Number. Used to validate your business on the portal. |
+| **GSP** | The authorized provider used by SIM: **BVM IT Consultancy Services India Private Limited** |
+| **GSP Username** | Created on the e-invoice portal. Always prefixed with `API_` (e.g., `API_yourusername`). |
+| **GSP Password** | The password linked to your GSP username. Keep it secure. Update it in the app if changed on the portal. |
+| **Validate Seller GSTIN** | Verifies your GSTIN against the government database and auto-fills your legal business name and address. |
+
+> **Important:** GSP credentials are completely separate from your regular GST portal login. They are used only for app-to-portal integration.
+
+#### 🎥 Video Tutorial
+[GSP Username & Password for E-Invoice](https://www.youtube.com/watch?v=dPSmtTALqQE&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=19)
+
+---
+
+### B. Generating an E-Invoice (IRN)
+
+#### What It Is
+An e-invoice is a B2B invoice that has been officially registered with the government's IRP and assigned a unique IRN. It is legally required for businesses with annual turnover above ₹5 crore. Once generated, the invoice is locked — it cannot be edited or deleted, ensuring authenticity and tamper-proof records.
+
 
 #### 🔁 Flow- B. Generating an E-Invoice (IRN)
 
@@ -949,13 +1115,14 @@ SIM integrates directly with India's government GST infrastructure, enabling bus
 | **IRN** | The 64-character unique code generated by the IRP. Printed on the e-invoice. |
 | **Acknowledgement Number** | A sequential confirmation number issued alongside the IRN. |
 | **QR Barcode** | Machine-readable code printed on the e-invoice, encoding key invoice data for verification. |
+| **Unique Quantity Code (UQC)** | A fixed, mandatory format for measurement units in e-invoice creation in India. The Invoice Registration Portal (IRP) requires units to be reported using a standardized Unique Quantity Code (UQC). |
 
-### E-Invoice Rules
+#### E-Invoice Rules
 - Once an IRN is generated, the invoice **cannot be edited or deleted**.
 - Cancellation is only possible within **24 hours** of IRN generation.
-- After 24 hours, the IRN is permanent and cannot be reversed through the app.
+- After 24 hours, the IRN is permanent and cannot be reversed.
 
-### Invoice Statuses — E-Invoice
+##### Invoice Statuses — E-Invoice
 
 | Status | Meaning |
 |---|---|
@@ -963,34 +1130,118 @@ SIM integrates directly with India's government GST infrastructure, enabling bus
 | **IRN Generated** | E-invoice successfully registered with the government. |
 | **Cancelled** | IRN cancelled within the 24-hour window. |
 
+#### 🎥 Video Tutorial
+[How to Generate E-Invoice (IRN)](https://www.youtube.com/watch?v=nobz4DVwbzc&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=20)
+
 ---
 
-### Key Fields — E-Way Bill
+### C. GSP Setup for E-Way Bill
 
-| Field | What It Means |
+#### What It Is
+Similar to e-invoice setup, generating e-way bills from SIM requires GSP credentials created on the government e-way bill portal. The setup process is identical, but it is done on a separate government portal.
+
+> If you are already an e-invoice user, you can use those same portal login credentials to log in to the e-way bill portal as well. However, GSP credentials (API username/password) need to be created separately on each portal.
+
+### 🔁 Flow 
+
+1. Go to **evwaybill.gst.gov.in** → log in. 
+    - Existing e-invoice users: same credentials work here too. 
+    - New users: click **New Registration.** 
+2. **Left Menu → Registration → For GSP.**
+3. Verify the OTP. 
+4. Select GSP: **BVMIT Consulting Services India Private Limited.** 
+5. Create GSP Username and Password → save. 
+6. Add credentials in SIM under **Settings** → E-Way Bill. 
+
+#### 🎥 Video Tutorial
+[GSP Username & Password for E-Way Bill](https://www.youtube.com/watch?v=dPSmtTALqQE&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=19)
+
+---
+
+### D. Generating an E-Way Bill
+
+#### What It Is
+An e-way bill is a mandatory digital document required before transporting goods worth more than ₹50,000 within India. It must be generated before goods leave the business premises. Without a valid e-way bill, goods can be held at checkpoints and the business may face penalties.
+
+---
+
+### 🔁 Flow 
+
+1. Settings → E-Way Bill → toggle on. 
+2. Enter GSTIN, GSP Username, GSP Password → tap Validate Seller GSTIN. 
+3. Validate the buyer: 
+    - Client List → tap client → add Legal Name + GSTIN → Validate Buyer GSTIN. 
+4. Create an invoice: 
+    - Add HSN code (mandatory) and measurement unit (mandatory) for each product. 
+    - Apply GST. 
+5. Generate e-way bill directly from the invoice, or save and generate later: 
+    - Hamburger menu → Invoices → E-Way Bill section → select invoice → fill required details → Generate E-Way Bill. 
+6. If validation fails: check all mandatory fields, correct, and retry. 
+7. Once generated, the e-way bill appears in the E-Way Bill section. 
+
+---
+
+### 🔁 1. Flow:Create E-Way Bill 
+You can generate an e-way bill in two ways: 
+  - From E-Way Bill Section: Go to E-Way Bill → select an invoice → generate e-way bill 
+
+  - From Invoice Form: Fill invoice details → tap “Generate E-Way Bill” → e-way bill form opens and invoice is auto-saved 
+
+ 
+### 🔁 2. Flow Validate Client GSTIN 
+You can validate GSTIN in two ways: 
+  - From Client Section: Go to Clients → select customer → tap “Validate GSTIN” → enter details → validate → ✔️ success shown 
+
+  - From Invoice Form: Select client → tap edit icon → enter details → validate GSTIN 
+
+---
+
+#### Key Fields
+
+| Field | Explanation |
 |---|---|
-| **Seller GSTIN** | The business's GST number. Validated against government records. |
-| **Buyer GSTIN** | The client's GST number. Both parties must be GST-validated to generate an e-way bill. |
-| **Legal Name** | Official registered business name of the seller or buyer, as per GST records. Auto-fetched after GSTIN validation. |
-| **HSN Code** | Mandatory field classifying the goods being transported. |
-| **Measurement Unit** | The unit in which goods are measured (kg, pcs, litre, etc.). Mandatory for e-way bill generation. |
-| **Transporter Details** | Information about the vehicle or courier carrying the goods. Required for a complete e-way bill. |
-| **E-Way Bill Number** | The unique number generated upon successful submission. Must accompany the goods during transit. |
+| **Seller GSTIN** | Your GST number. Validated against government records. |
+| **Buyer GSTIN** | The client's GST number. Both seller and buyer must be GST-validated before an e-way bill can be generated. |
+| **Legal Name** | The official registered business name of the seller or buyer, as per GST records. Auto-fetched after GSTIN validation. |
+| **HSN Code** | Mandatory. Classifies the goods being transported. |
+| **Measurement Unit (UQC)** | Mandatory. The standardized unit in which goods are measured (e.g., KGS, NOS, LTR). |
+| **Transporter Details** | Information about the vehicle or courier carrying the goods. Required to complete the e-way bill. |
+| **E-Way Bill Number** | The unique number generated upon successful submission. Must physically accompany the goods during transport. |
 
-### E-Way Bill Rules
-- Required for goods valued above **₹50,000** being transported.
-- Must be generated **before goods leave the business premises**.
-- Validity is based on distance — approximately **1 day per 100 km**.
-- If mandatory fields are missing, the system shows a validation error. No penalty for failed attempts — correct and retry.
+#### GSTIN Validation — Two Ways
+A buyer's GSTIN can be validated from two places:
+- **From the Client section:** Go to Clients → select the client → tap **Validate GSTIN** → enter details → validate.
+- **From the Invoice form:** Select the client → tap the edit icon → enter GSTIN details → validate.
 
-### GSP Credentials: E-Invoice vs. E-Way Bill
+#### E-Way Bill Generation — Two Ways
+- **From the E-Way Bill section:** Go to hamburger menu → Invoices → E-Way Bill → select an invoice → fill required details → Generate E-Way Bill.
+- **From the Invoice form directly:** Fill invoice details → tap **Generate E-Way Bill** — the e-way bill form opens and the invoice is auto-saved simultaneously.
 
-| Portal | Website | Same as other portal? |
+#### Key Rules for E-Way Bill
+
+| Rule | Detail |
+|---|---|
+| **Value threshold** | Required for goods worth more than ₹50,000 being transported. |
+| **Timing** | Must be generated before goods leave your premises. |
+| **Validity** | 1 day per 200 km (or part thereof) for normal cargo vehicles. 1 day per 20 km for over-dimensional cargo. |
+| **Validation errors** | If mandatory fields are missing, the system shows a specific error. Fix the flagged fields and retry — no penalty for failed attempts. |
+
+#### 🎥 Video Tutorial
+[How to Generate E-Way Bill](https://www.youtube.com/watch?v=nobz4DVwbzc&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=20)
+
+---
+
+### GSP Credentials: E-Invoice vs. E-Way Bill — Quick Comparison
+
+| | E-Invoice Portal | E-Way Bill Portal |
 |---|---|---|
-| E-Invoice | einvoice1.gst.gov.in | If already an e-way bill user, same credentials can be used to log in to e-invoice portal. |
-| E-Way Bill | ewaybill.gst.gov.in | If already an e-invoice user, same credentials can be used to log in to e-way bill portal. |
+| **Website** | einvoice1.gst.gov.in | ewaybill.gst.gov.in |
+| **Can share portal login?** | If already an e-way bill user, same portal login works here | If already an e-invoice user, same portal login works here |
+| **GSP credentials** | Must be created separately on this portal | Must be created separately on this portal |
 
-> **Important distinction:** The portal login (GSTIN + password) and the GSP credentials (API username + password) are two separate things. The portal login is for manual access to the government website. The GSP credentials are for app integration only.
+> **Key distinction:** Your portal login (GSTIN + password) and your GSP credentials (API username + password) are two entirely different things. The portal login is for manually accessing the government website. The GSP credentials are exclusively for app integration.
+
+---
 
 ### Alternate Terms
 
@@ -1002,15 +1253,10 @@ SIM integrates directly with India's government GST infrastructure, enabling bus
 | GSP | GST Suvidha Provider, API Provider, GST Intermediary |
 | IRP | Invoice Registration Portal, Government E-Invoice Portal |
 | IRN | Invoice Reference Number, E-Invoice Number |
-| HSN Code | Harmonised System Nomenclature, Tariff Code, Product Code |
+| HSN Code | Harmonised System Nomenclature, Tariff Code, Product Classification Code |
+| UQC | Unique Quantity Code, Measurement Unit Code |
 | ITC | Input Tax Credit, GST Credit, Tax Set-Off |
 | Acknowledgement Number | ACK Number, Confirmation Number |
-
-### 🎥 Video Tutorials
-- [GSP Setup for E-Invoice](https://www.youtube.com/watch?v=dPSmtTALqQE&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=19)
-- [Generate E-Invoice (IRN)](https://www.youtube.com/watch?v=nobz4DVwbzc&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=20)
-- [GSP Setup for E-Way Bill](https://www.youtube.com/watch?v=dPSmtTALqQE&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=19)
-- [Generate E-Way Bill](https://www.youtube.com/watch?v=nobz4DVwbzc&list=PL9NRmuo_lj22dReggkiHIZRUK-b-4kWKz&index=20)
 
 ---
 
@@ -1083,7 +1329,7 @@ SIM integrates directly with India's government GST infrastructure, enabling bus
       "Change label on invoice",
       "Rename columns in documents"
     ],
-    "answer": "Yes, you can rename field labels shown on your documents. Go to Settings >> Manage Fields in Documents >> Rename Field. This allows you to customize the label text for fields that appear on invoices, estimates, and other documents — for example, changing 'Shipping Charges' to 'Freight' or 'Client' to 'Customer' to match your business terminology.",
+    "answer": "Yes, you can rename field labels shown on your documents. Go to Settings >> Manage Fields >> Rename Field. This allows you to customize the label text for fields that appear on invoices, estimates, and other documents — for example, changing 'Shipping Charges' to 'Freight' or 'Client' to 'Customer' to match your business terminology.",
     "module": "settings",
     "intent": "customize_fields",
     "tags": ["rename field", "customize", "settings", "field names", "document labels"],
