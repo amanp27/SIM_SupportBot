@@ -65,7 +65,7 @@ Filled by the business owner during initial app setup (onboarding) and updated a
 
 ### Concepts
 
-**Financial Year (Fiscal Year):** A 12-month accounting period used for bookkeeping and tax filing. It does not have to follow the calendar year. In India, the financial year runs from **April 1 to March 31**. In the US and many other countries, it is January to December. The app uses this period to filter dashboard data and reports.
+**Financial Year (Fiscal Year):** A Financial Year (Fiscal Year) is a 12-month accounting period used for bookkeeping and tax reporting, which may differ from the calendar year. The app uses this period to filter dashboard data and reports
 
 ### Alternate Terms
 
@@ -85,8 +85,8 @@ Filled by the business owner during initial app setup (onboarding) and updated a
 ### What It Is
 All business contacts are managed in one place. 
 
-* Clients – People or businesses that receive invoices for sales. 
-* Suppliers – People or businesses from whom purchases are made. 
+* Clients – businesses that receive invoices for sales. 
+* Suppliers – businesses from whom purchases are made. 
 
 Once a contact is added, it can be selected instantly while creating invoices or purchases, without entering details again. 
 
@@ -111,7 +111,7 @@ This feature is useful for businesses that regularly deal with the same clients 
 
 | Field | What It Means |
 |---|---|
-| **Opening Balance** | Choose whether the business needs to receive money from the client or if it needs to pay money to the client. - To Receive: The client owes money to the business. - To Give: The business owes money to the client. |
+| **Opening Balance** | Choose what applies: - To Receive: You will get money from the client - To Give: You will pay money to the client
 | **GST Number (GSTIN)/ Tax ID** | Enter your business tax identification number (e.g., GSTIN, VAT, or TIN) |
 
 
@@ -128,7 +128,6 @@ This feature is useful for businesses that regularly deal with the same clients 
 
 **Transaction history-** It shows the sales and payment that were recorded in a table format. User can select the transaction by tapping the rows that he wants to refer to and add changes if necessary 
 
-**Credit limit**: Up to what limit would you allow the client to obtain credit from you against invoices. The customer insight records and shows for each client to remind you if the client has crossed the threshold limit that you have set for the client 
 
 ### Export Client/Supplier List to Excel: - 
 You can easily download your Client/Supplier list using the Export Excel option. 
@@ -147,6 +146,9 @@ Gives a complete summary of transactions, including credit limits, upcoming dues
 | Average Days to Pay | Average time a customer takes to make payments | Helps understand payment behavior and reliability |
 | Customer Activity | Graph of monthly or periodic transactions | Helps track customer engagement and business trends |
 | Top Selling Products  | Most frequently purchased products by the customer  | Helps identify customer preferences and popular items |
+
+**Credit limit**: Up to what limit would you allow the client to obtain credit from you against invoices. The customer insight records and shows for each client to remind you if the client has crossed the threshold limit that you have set for the client 
+
 
 Report – Top 5 customers on the basis 
 
