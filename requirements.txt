@@ -4,3 +4,4 @@ langchain-text-splitters
 faiss-cpu
 langgraph
 python-dotenv
+pypdf
