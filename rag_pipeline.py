@@ -48,7 +48,15 @@ chain = parallel | prompt_template | llm | StrOutputParser()
 
 
 #6] Run
-print("PDF ready. Ask question: ")
-q = input("\nQ: ")
-ans = chain.invoke(q.strip())
-print("\nA: ", ans)
+while True:
+    print("PDF ready. Ask question: ")
+    q = input("\nQ:").strip().lower()
+
+    if q in ["bye", 'thankyou', "exit"]:
+        print("\nThankyou have a great day!")
+        break
+
+    ans = chain.invoke(q.strip())
+    print("\nA: ", ans)
+    print("-"*50)
+
